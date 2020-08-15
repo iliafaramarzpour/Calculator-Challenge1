@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="css/reset.css">
 </head>
 
-<body>
+<body class="light" onload="DetectUserThemeColor()">
     <header>
         <div class="icon">
-            <img src="img/moon.png" alt="" class="night__img">
-            <img src="img/sun (2).png" alt="" class="day__img">
+            <a href="#" onclick="ToggleWindowTheme()">
+                <img src="img/moon.png" alt="" class="night__img">
+            </a>
+            <a href="#" onclick="ToggleWindowTheme()">
+                <img src="img/sun (2).png" alt="" class="day__img">
+            </a>
         </div>
     </header>
     <main>
@@ -21,7 +25,7 @@
         <div class="answer">
             جواب :
             <span id="result">
-                123
+                0
             </span>
         </div>
         <div class="calculator__main">
@@ -45,15 +49,16 @@
                 </option>
             </select>
             <div class="btn">
-                <div class="comuting__btn">
+                <div class="computing__btn" onclick="Computing()">
                     محاسبه
                 </div>
-                <div class="clear__result__btn">
+                <div class="clear__result__btn" onclick="ClearResults()">
                     پاک کردن
                 </div>
             </div>
         </div>
     </main>
+    <script src="js/app.js"></script>
 </body>
 
 </html>

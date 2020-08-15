@@ -71,10 +71,6 @@ body header {
   padding: 30px 0 0 43px;
 }
 
-body header .icon .night__img {
-  display: none;
-}
-
 body main {
   font-family: iranyekan;
   display: -webkit-box;
@@ -181,7 +177,7 @@ body main .calculator__main .btn {
           justify-content: space-between;
 }
 
-body main .calculator__main .btn .comuting__btn {
+body main .calculator__main .btn .computing__btn {
   background-color: #348d1f;
   font-size: 20px;
   padding: 23px 64px;
@@ -211,7 +207,20 @@ body main .calculator__main .btn .clear__result__btn {
   background-color: #00051d;
 }
 
+.dark header .icon .day__img {
+  display: none;
+}
+
+.dark main h1,
+.dark main .answer {
+  color: #ffff;
+}
+
 .light {
   background-color: #ffffff;
+}
+
+.light header .icon .night__img {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

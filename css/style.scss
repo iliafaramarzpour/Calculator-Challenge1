@@ -6,11 +6,6 @@ body {
 
   header {
     padding: 30px 0 0 43px;
-    .icon {
-      .night__img {
-        display: none;
-      }
-    }
   }
 
   main {
@@ -72,7 +67,7 @@ body {
       .btn {
         display: flex;
         justify-content: space-between;
-        .comuting__btn {
+        .computing__btn {
           background-color: $green;
           font-size: 20px;
           padding: 23px 64px;
@@ -103,8 +98,29 @@ body {
 
 .dark {
   background-color: $dark;
+  header {
+    .icon {
+      .day__img {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    h1,
+    .answer {
+      color: $white;
+    }
+  }
 }
 
 .light {
   background-color: $light;
+  header {
+    .icon {
+      .night__img {
+        display: none;
+      }
+    }
+  }
 }
