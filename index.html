@@ -1,11 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body>
-    hello world!
+    <header>
+        <div class="icon">
+            <img src="img/moon.png" alt="" class="night__img">
+            <img src="img/sun (2).png" alt="" class="day__img">
+        </div>
+    </header>
+    <main>
+        <h1>ماشین حساب تمرین اول </h1>
+        <div class="answer">
+            جواب :
+            <span id="result">
+                123
+            </span>
+        </div>
+        <div class="calculator__main">
+            <input type="text" placeholder="عدد اول" id="number-one">
+            <input type="text" placeholder="عدد دوم" id="number-two">
+            <select name="" id="oprator">
+                <option value="default">
+                    عملگر را انتخاب کنید
+                </option>
+                <option value="+">
+                    جمع
+                </option>
+                <option value="-">
+                    تفریق
+                </option>
+                <option value="*">
+                    ضرب
+                </option>
+                <option value="/">
+                    تقسیم
+                </option>
+            </select>
+            <div class="btn">
+                <div class="comuting__btn">
+                    محاسبه
+                </div>
+                <div class="clear__result__btn">
+                    پاک کردن
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>

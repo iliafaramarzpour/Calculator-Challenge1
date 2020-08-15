@@ -1,0 +1,110 @@
+@import "variable";
+@import "fonts";
+body {
+  width: 100vw;
+  height: 100vh;
+
+  header {
+    padding: 30px 0 0 43px;
+    .icon {
+      .night__img {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    font-family: iranyekan;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 30px;
+      color: $gray;
+      margin-bottom: 77px;
+      font-weight: bold;
+    }
+    .answer {
+      font-size: 20px;
+      font-weight: 300;
+      color: $gray;
+      margin-bottom: 104px;
+      #result {
+        font-size: 90px;
+        font-weight: bold;
+      }
+    }
+    .calculator__main {
+      display: flex;
+      flex-direction: column;
+      direction: rtl;
+      input[type="text"] {
+        border: 1px solid $black100;
+        padding: 25px 16px 20px 0;
+        outline: none;
+        width: 442px;
+        font-family: iranyekan;
+        color: $gray100;
+        font-size: 20px;
+        margin-bottom: 21px;
+        border-radius: 4px;
+        &::placeholder {
+          color: $gray100;
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+      select {
+        border: 1px solid $black100;
+        padding: 25px 16px 20px 0;
+        outline: none;
+        font-family: iranyekan;
+        font-size: 20px;
+        font-weight: 300;
+        border-radius: 4px;
+        margin-bottom: 25px;
+        color: $gray100;
+        option {
+          font-size: 20px;
+          font-weight: 300;
+        }
+      }
+      .btn {
+        display: flex;
+        justify-content: space-between;
+        .comuting__btn {
+          background-color: $green;
+          font-size: 20px;
+          padding: 23px 64px;
+          color: $white;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          cursor: pointer;
+        }
+        .clear__result__btn {
+          background-color: $yellow;
+          font-size: 20px;
+          padding: 23px 64px;
+          color: $white;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.dark {
+  background-color: $dark;
+}
+
+.light {
+  background-color: $light;
+}
